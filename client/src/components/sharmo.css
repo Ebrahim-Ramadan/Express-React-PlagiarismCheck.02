@@ -1,0 +1,115 @@
+.button {
+    display: flex;
+    height: 2.5rem;
+    touch-action: none;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+    border-style: none;
+    background-color: hsl(204 100% 40%);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: hsl(204 20% 100%);
+    text-decoration-line: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+  
+  .button:hover {
+    background-color: hsl(204 100% 32%);
+  }
+  
+  .button[aria-disabled="true"] {
+    opacity: 0.5;
+  }
+  
+  @media (min-width: 640px) {
+    .button {
+      gap: 0.5rem;
+    }
+  }
+  
+  .anchor {
+    font-weight: 500;
+    color: rgb(157, 187, 206);
+    text-decoration-line: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-skip-ink: none;
+  }
+  
+  .anchor:hover {
+    text-decoration-thickness: 3px;
+  }
+  
+  :is(.dark .anchor) {
+    color: hsl(204 100% 64%);
+  }
+  
+  .hovercard {
+    position: relative;
+    z-index: 50;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(204 20% 88%);
+    background-color: hsl(204 20% 100%);
+    padding: 1rem;
+    color: hsl(204 10% 10%);
+    box-shadow:
+      0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  .button:focus-visible,
+  .button[data-focus-visible],
+  .hovercard:focus-visible,
+  .hovercard[data-focus-visible] {
+    outline: 2px solid hsl(204 100% 40%);
+    outline-offset: 2px;
+  }
+  
+  :is(.dark .hovercard) {
+    border-color: hsl(204 3% 26%);
+    background-color: hsl(204 3% 18%);
+    color: hsl(204 20% 100%);
+    box-shadow:
+      0 10px 15px -3px rgb(0 0 0 / 0.25),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  .avatar {
+    width: 4rem;
+    border-radius: 9999px;
+  }
+  
+  .username {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .hovercard-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0 2px 0 2px;
+  }
+  p#mainP{
+    color: rgba(255, 255, 255, 0.934);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+display: flex;
+justify-content: center;
+  }
