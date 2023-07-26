@@ -34,9 +34,11 @@ return () => {
     }  
 ```
 <br>
-with the main textarea 
-`         <textarea type="text" ref={modalRef} placeholder="start writing" />`
-
+with the main textarea
+```         
+<textarea type="text" ref={modalRef} placeholder="start writing" />
+```
+<br><br>
 
 
 https://github.com/Ebrahim-Ramadan/Express-React-PlagiarismCheck.02-RESTfulAPI/assets/65041082/0695f733-5c0b-4efe-bed4-f965e7857d30
@@ -53,3 +55,5 @@ https://github.com/Ebrahim-Ramadan/Express-React-PlagiarismCheck.02-RESTfulAPI/a
 <br>
 -- AbortController to update the request state in case o cancelling the requet by the user (out of the typing-modal) <br>
 -- hovering over the ` @Ebrahim Ramadan ` for a little shows this modal of me for [My Github Overview](https://github.com/ebrahim-Ramadan/). and clicking on it takes you to [My Twitter](https://twitter.com/scoopsahoykid). <br>
+![image](https://github.com/Ebrahim-Ramadan/Express-React-PlagiarismCheck.02-RESTfulAPI/assets/65041082/3c544ff5-c7b7-4d1e-ba48-eb17c45344d8)
+
