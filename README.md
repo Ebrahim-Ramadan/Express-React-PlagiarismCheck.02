@@ -60,4 +60,4 @@ https://github.com/Ebrahim-Ramadan/Express-React-PlagiarismCheck.02-RESTfulAPI/a
 <br>
 ![Screenshot 2023-07-26 152600](https://github.com/Ebrahim-Ramadan/Express-React-PlagiarismCheck.02-RESTfulAPI/assets/65041082/241539d5-1b54-4125-8d4f-25540146d089)
 <br>
--- Different Errors handled very gracefully on both server and client related
+-- Different Errors handled very gracefully on both server and client related, check the API
