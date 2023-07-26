@@ -6,33 +6,33 @@ This very modular UI shows to the user to start typing the whole text for check,
 <br>
 getting out of (unshowing) the typing-modal cancels the request with a `useEffect()'s cleanup func`:
 <br>
-`
-  useEffect(() => {<br>
-    if (showModal) {<br>
-          modalRef.current.focus();<br>
-          try{<br>
-          await fetch()...<br>
-          } catch (error) {<br>
-        if (error.name === 'AbortError') {<br>
-          console.log('Fetch request was aborted by the user.');<br>
-          toastify('Requet Aborted')<br>
-        } else {<br>
-          console.error('An error occurred:', error.message);<br>
-        }<br>
-      }<br>
-            const textareaElement = modalRef.current;<br>
-      if (abortControllerRef.current) {<br>
-        abortControllerRef.current.abort();<br>
-      }<br>
-return () => {<br>
-      // Cleanup function<br>
-      // If the component unmounts or the dependency array changes, abort the request<br>
-      if (abortControllerRef.current) {<br>
-        abortControllerRef.current.abort();<br>
-      }<br>
-    };<br>
-    }<br>
-`
+```
+  useEffect(() => {  
+    if (showModal) {  
+          modalRef.current.focus();  
+          try{  
+          await fetch()...  
+          } catch (error) {  
+        if (error.name === 'AbortError') {  
+          console.log('Fetch request was aborted by the user.');  
+          toastify('Requet Aborted')  
+        } else {  
+          console.error('An error occurred:', error.message);  
+        }  
+      }  
+            const textareaElement = modalRef.current;  
+      if (abortControllerRef.current) {  
+        abortControllerRef.current.abort();  
+      }  
+return () => {  
+      // Cleanup function  
+      // If the component unmounts or the dependency array changes, abort the request  
+      if (abortControllerRef.current) {  
+        abortControllerRef.current.abort();  
+      }  
+    };  
+    }  
+```
 <br>
 with the main textarea 
 `         <textarea type="text" ref={modalRef} placeholder="start writing" />`
